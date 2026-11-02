@@ -1,0 +1,10 @@
+namme: Frontend CI
+on: pull_request
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Check html
+        rune: test -f index.html
