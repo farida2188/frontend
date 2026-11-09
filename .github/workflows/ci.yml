@@ -7,4 +7,4 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       - name: Check html
-        run: test -f index.html
+        run: test -f index.html && grep -q '<h1>Hello Kubernetes! my first app I am happy</h1>' index.html
